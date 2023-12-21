@@ -1,15 +1,22 @@
+import java.util.HashMap;
+
+// Fully optimized
+// Space: O(n)
+// Time : O(n)
 class Solution {
 	public int[] twoSum(int[] nums, int target) {
-		int[] arrayToReturn = new int[2];
-		for (int i = 0; i < nums.length; i++) {
-			for (int j = i + 1; j < nums.length; j++) {
-				if (nums[i] + nums[j] == target) {
-					arrayToReturn[0] = i;
-					arrayToReturn[1] = j;
-					break;
-				}
+		HashMap<Integer, Integer> map = new HashMap<>();
+		int[] retVal = new int[2];
+		
+		for(int i = 0; i < nums.length; i++) {
+			if(map.containsKey(target - nums[i])) {
+				retVal[0] = i;
+				retVal[1] = map.get(target - nums[i]);
+				return retVal;
 			}
+			map.put(nums[i], i);
 		}
-		return arrayToReturn;
+		
+		return retVal;
 	}
 }
