@@ -14,6 +14,8 @@
  * }
  */
 
+// Time: O(n)
+// Space: O(n)
 class Solution {
 	public TreeNode invertTree(TreeNode root) {
 		if (root == null) {
