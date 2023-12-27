@@ -1,4 +1,5 @@
-import javax.swing.tree.TreeNode;
+// Time: O(n)
+// Space: O(n) for recursion call stack
 
 class Solution {
     public boolean isBalanced(TreeNode root) {
@@ -18,5 +19,3 @@ class Solution {
         return 1 + Math.max(left, right);
     }
 }
-
-
