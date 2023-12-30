@@ -6,22 +6,18 @@ class Solution {
     public HashMap<Integer, Integer> map = new HashMap<>();
 
     public int climbStairs(int n) {
-        return helper(n);
-    }
-
-    public int helper(int stepsLeft) {
-        if (map.containsKey(stepsLeft)) {
-            return map.get(stepsLeft);
+        if (map.containsKey(n)) {
+            return map.get(n);
         }
-        if (stepsLeft == 0) {
+        if (n == 0) {
             return 1;
         }
-        if (stepsLeft < 0) {
+        if (n < 0) {
             return 0;
         }
 
-        int numOfWaysToMakeStepsLeft = helper(stepsLeft - 1) + helper(stepsLeft - 2);
-        map.put(stepsLeft, numOfWaysToMakeStepsLeft);
+        int numOfWaysToMakeStepsLeft = climbStairs(n - 1) + climbStairs(n - 2);
+        map.put(n, numOfWaysToMakeStepsLeft);
         return numOfWaysToMakeStepsLeft;
     }
 }
