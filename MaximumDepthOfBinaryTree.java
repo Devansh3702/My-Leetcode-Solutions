@@ -1,4 +1,3 @@
-import javax.swing.tree.TreeNode;
 // Time: O(n)
 // Space: O(1)
 class Solution {
