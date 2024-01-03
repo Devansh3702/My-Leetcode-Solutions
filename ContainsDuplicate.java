@@ -1,14 +1,17 @@
-import java.util.Arrays;
+import java.util.HashSet;
 
+// Time: O(n)
+// Space: O(n)
 class Solution {
-	public boolean containsDuplicate(int[] nums) {
+    public boolean containsDuplicate(int[] nums) {
+        HashSet<Integer> set = new HashSet<>();
 
-		Arrays.sort(nums);
-
-		for (int i = 0; i < nums.length - 1; i++) {
-			if (nums[i] == nums[i + 1])
-				return true;
-		}
-		return false;
-	}
+        for (int i = 0; i < nums.length; i++) {
+            if (set.contains(nums[i])) {
+                return true;
+            }
+            set.add(nums[i]);
+        }
+        return false;
+    }
 }
