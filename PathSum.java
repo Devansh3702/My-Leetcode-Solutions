@@ -1,5 +1,3 @@
-import javax.swing.tree.TreeNode;
-
 // Optimal
 // Time: O(n) where n = total # of nodes
 // Space: O(1) if we ignore recursion call tree space.
