@@ -1,8 +1,5 @@
-import javax.swing.tree.TreeNode;
-import java.util.Arrays;
-
 // Time: O(n)
-// Space: O(log n)
+// Space: O(n) because it creates n new nodes.
 class Solution {
     public TreeNode sortedArrayToBST(int[] nums) {
         return helper(nums, 0, nums.length - 1);
