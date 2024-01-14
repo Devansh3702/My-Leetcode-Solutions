@@ -13,7 +13,6 @@ class Solution {
 
         int left = rangeSumBST(root.left, low, high);
         int right = rangeSumBST(root.right, low, high);
-
         return retVal + left + right;
     }
 }
