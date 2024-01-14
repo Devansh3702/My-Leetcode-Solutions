@@ -1,5 +1,5 @@
-import javax.swing.tree.TreeNode;
-
+// Time: O(n)
+// Space: O(n)
 class Solution {
     public int rangeSumBST(TreeNode root, int low, int high) {
         if (root == null) {
