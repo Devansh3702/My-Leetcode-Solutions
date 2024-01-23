@@ -7,14 +7,16 @@ class Solution {
 
         if (numOnes >= k) {
             return k;
-        } else {
+        } 
+        else {
             retVal = numOnes;
             k -= numOnes;
         }
 
         if (numZeros >= k) {
             return retVal;
-        } else {
+        } 
+        else {
             k -= numZeros;
         }
 
