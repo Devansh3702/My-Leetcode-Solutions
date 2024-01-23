@@ -13,7 +13,8 @@ class Solution {
         if (amount[0] <= 0) {
             if (amount[1] <= 0) {
                 return amount[2];
-            } else {
+            } 
+            else {
                 if (amount[2] <= 0) {
                     return amount[1];
                 }
@@ -22,7 +23,8 @@ class Solution {
         } else {
             if (amount[1] > 0) {
                 return 1 + fillCups(new int[]{amount[0] - 1, amount[1] - 1, amount[2]});
-            } else {
+            } 
+            else {
                 if (amount[2] <= 0) {
                     return amount[0];
                 }
