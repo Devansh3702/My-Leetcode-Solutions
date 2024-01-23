@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
-// Time: O(M) where M = greatest element in amount[] array. Arrays.sort() takes negligible time because array length = 3.
+// Time: O(M) where M = greatest element in amount[] array. 
+// Arrays.sort() takes negligible time because array length = 3 only.
 // Space: O(1)
 class Solution {
     public int fillCups(int[] amount) {
