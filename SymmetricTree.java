@@ -1,5 +1,3 @@
-import javax.swing.tree.TreeNode;
-
 // Time: O(n)
 // Space: O(1) if ignoring recursion call stack, else its O(h) [between O(log n) and O(n)]
 class Solution {
