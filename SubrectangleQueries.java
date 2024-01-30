@@ -1,6 +1,6 @@
 class SubrectangleQueries {
 
-    private int[][] subRectangle;    // Space: O(row x col)
+    private int[][] subRectangle;        // Space: O(row x col)
 
     public SubrectangleQueries(int[][] rectangle) {     
         // Running Time: O(1))
