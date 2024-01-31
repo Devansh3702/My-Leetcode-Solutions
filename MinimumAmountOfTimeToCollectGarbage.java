@@ -1,5 +1,5 @@
 class Solution {
-
+    // Not Optimal
     // Time: O(n*(n+m)) where n = garbage.length and m = length of longest String element.
     // Space: O(1)
     public int garbageCollection(String[] garbage, int[] travel) {
