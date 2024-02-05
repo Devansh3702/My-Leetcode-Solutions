@@ -12,8 +12,7 @@ class Solution {
 
         for (int i = 0; i < n; i++) {
             if (!map.containsKey(arr[i])) {
-                map.put(arr[i], mapNdx);
-                mapNdx++;
+                map.put(arr[i], mapNdx++);
             }
             memo[map.get(arr[i])]++;
         }
