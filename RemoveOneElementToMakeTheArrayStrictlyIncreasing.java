@@ -1,3 +1,5 @@
+// Time: O(n)
+// Space: O(1)
 class Solution {
     public boolean canBeIncreasing(int[] nums) {
         int violation = 0;
