@@ -1,3 +1,5 @@
+// Time: O(1)
+// Space: O(1)
 class Solution {
     public String triangleType(int[] nums) {
         if (nums[0] == nums[1] && nums[1] == nums[2]) {
